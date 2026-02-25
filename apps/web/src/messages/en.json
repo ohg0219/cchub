@@ -1,0 +1,21 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "notFound": "Not found."
+  },
+  "nav": {
+    "explore": "Explore",
+    "submit": "Submit Kit",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Claude Code infrastructure in one shot",
+    "subtitle": "A starter kit marketplace to install Skills + Hooks + Agents + CLAUDE.md in one click",
+    "cta": {
+      "explore": "Explore Kits",
+      "submit": "Submit Your Kit"
+    }
+  }
+}

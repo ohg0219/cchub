@@ -674,7 +674,7 @@ cckit/
 │   ├── web/
 │   │   ├── package.json                  ← 신규
 │   │   ├── next.config.ts                ← 신규
-│   │   ├── tailwind.config.ts            ← 신규
+│   │   ├── postcss.config.mjs            ← 신규 (Tailwind v4는 tailwind.config.ts 불필요)
 │   │   ├── tsconfig.json                 ← 신규
 │   │   └── src/
 │   │       ├── middleware.ts             ← 신규

@@ -1,0 +1,30 @@
+name: cckit-starter
+version: 1.0.0
+description: CCKit 마켓플레이스 개발용 PDCA AI 워크플로우 킷 — Skills/Agents/Hooks 포함
+author: cckit-team
+license: MIT
+language:
+  - ko
+  - en
+category: fullstack
+tags:
+  - pdca
+  - workflow
+  - claude-code
+  - agents
+  - hooks
+compatible_agents:
+  - claude-code
+requirements:
+  node: ">=18"
+components:
+  skills: 2
+  hooks: 3
+  agents: 4
+  claude_md: true
+install:
+  target:
+    skills: ".claude/skills/"
+    hooks: ".claude/hooks/"
+    agents: ".claude/agents/"
+    claude_md: "./CLAUDE.md"

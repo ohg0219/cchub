@@ -1,0 +1,28 @@
+name: nextjs-fullstack
+version: 1.0.0
+description: Next.js 15 App Router + TypeScript + Tailwind CSS 풀스택 개발 스타터 킷
+author: cckit-team
+license: MIT
+language:
+  - ko
+  - en
+category: fullstack
+tags:
+  - nextjs
+  - typescript
+  - tailwind
+  - react
+  - app-router
+compatible_agents:
+  - claude-code
+requirements:
+  node: ">=18"
+components:
+  skills: 1
+  hooks: 0
+  agents: 0
+  claude_md: true
+install:
+  target:
+    skills: ".claude/skills/"
+    claude_md: "./CLAUDE.md"

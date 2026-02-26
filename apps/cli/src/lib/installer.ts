@@ -42,10 +42,16 @@ function resolveDestPath(
   if (options.skipHooks && node.kind === 'hook') return null;
   if (options.skipAgents && node.kind === 'agent') return null;
 
+  // node.path 에서 종류별 하위 경로 추출 (e.g. "seeds/cckit-starter/skills/pdca/SKILL.md" → "pdca/SKILL.md")
+  const getSubPath = (prefix: string) => {
+    const idx = node.path.indexOf(prefix);
+    return idx !== -1 ? node.path.slice(idx + prefix.length) : node.name;
+  };
+
   switch (node.kind) {
-    case 'skill':     return path.join(base, '.claude', 'skills', node.name);
-    case 'hook':      return path.join(base, '.claude', 'hooks', node.name);
-    case 'agent':     return path.join(base, '.claude', 'agents', node.name);
+    case 'skill':     return path.join(base, '.claude', 'skills', getSubPath('skills/'));
+    case 'hook':      return path.join(base, '.claude', 'hooks', getSubPath('hooks/'));
+    case 'agent':     return path.join(base, '.claude', 'agents', getSubPath('agents/'));
     case 'claude_md': return path.join(base, 'CLAUDE.md');
     default:          return null;
   }
@@ -171,7 +177,11 @@ export async function installKit(
   overwriteClaudeMd: boolean
 ): Promise<InstallResult> {
   const base = options.targetDir ?? process.cwd();
-  const fileNodes = collectFiles(kit.file_tree ?? []);
+  const rawTree = kit.file_tree;
+  const treeArray = Array.isArray(rawTree)
+    ? rawTree
+    : (rawTree as unknown as { tree?: FileTreeNode[] })?.tree ?? [];
+  const fileNodes = collectFiles(treeArray);
   const installedFiles: string[] = [];
 
   for (const node of fileNodes) {

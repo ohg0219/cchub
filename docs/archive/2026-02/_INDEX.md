@@ -9,6 +9,17 @@
 | [cckit-cli](cckit-cli/) | 96% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-cli/` |
 | [cckit-seed](cckit-seed/) | 95% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-seed/` |
 | [cchub-rename](cchub-rename/) | 98% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-rename/` |
+| [cchub-features](cchub-features/) | 92% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-features/` |
+
+## cchub-features 요약
+
+- **범위**: 로그인 UI 페이지, 킷 등록 페이지(SubmitForm), GitHub repo 분석 API, POST /api/kits 핸들러, middleware 인증 경로 분리
+- **결과**: FR 8/8, Critical 0건, Warning 2건, Match Rate 92%, Act 스킵
+- **문서**:
+  - [Plan](cchub-features/cchub-features.plan.md)
+  - [Design](cchub-features/cchub-features.design.md)
+  - [Analysis](cchub-features/cchub-features.analysis.md)
+  - [Report](cchub-features/cchub-features.report.md)
 
 ## cchub-rename 요약
 

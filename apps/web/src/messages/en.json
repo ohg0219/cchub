@@ -65,6 +65,37 @@
     "install": "Install",
     "githubLink": "View on GitHub"
   },
+  "login": {
+    "title": "Login",
+    "subtitle": "A GitHub account is required to submit kits to CCHub.",
+    "button": "Login with GitHub",
+    "terms": "By logging in, you agree to our Terms of Service."
+  },
+  "submit": {
+    "title": "Submit a Kit",
+    "subtitle": "Enter a GitHub repo URL and we'll auto-fill the metadata.",
+    "form": {
+      "githubUrl": "GitHub URL",
+      "githubUrlPlaceholder": "https://github.com/owner/repo",
+      "name": "Kit Name",
+      "namePlaceholder": "My Starter Kit",
+      "description": "Description",
+      "descriptionPlaceholder": "Describe what this kit does...",
+      "category": "Category",
+      "tags": "Tags",
+      "tagsPlaceholder": "spring, java, backend (comma separated)",
+      "submit": "Submit Kit",
+      "submitting": "Submitting..."
+    },
+    "analyzing": "Analyzing GitHub repo...",
+    "analyzed": "Metadata auto-filled",
+    "error": {
+      "invalidUrl": "Please enter a valid GitHub repo URL.",
+      "analysisFailed": "GitHub analysis failed. Please fill in manually.",
+      "submitFailed": "Submission failed. Please try again.",
+      "duplicate": "This repo is already registered."
+    }
+  },
   "footer": {
     "copyright": "© 2026 CCHub",
     "github": "GitHub",

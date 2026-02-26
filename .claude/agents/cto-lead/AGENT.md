@@ -29,8 +29,7 @@ tools:
   - Glob
   - Grep
   - Bash
-  - Task(enterprise-expert)
-  - Task(infra-architect)
+  - Task(system-architect)
   - Task(bkend-expert)
   - Task(frontend-architect)
   - Task(security-architect)
@@ -44,8 +43,6 @@ tools:
   - WebSearch
 skills:
   - pdca
-  - enterprise
-  - bkit-rules
 ---
 
 ## CTO Lead Agent
@@ -66,7 +63,7 @@ PDCA workflow by coordinating specialized teammate agents.
 | Phase | Action | Delegate To |
 |-------|--------|-------------|
 | Plan | Analyze requirements, define scope | product-manager |
-| Design | Architecture decisions, review designs | enterprise-expert, frontend-architect, security-architect |
+| Design | Architecture decisions, review designs | system-architect, frontend-architect, security-architect |
 | Do | Distribute implementation tasks | bkend-expert, frontend-architect |
 | Check | Coordinate multi-angle verification | qa-strategist, gap-detector, code-analyzer |
 | Act | Prioritize fixes, decide iteration | pdca-iterator |

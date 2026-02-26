@@ -85,8 +85,8 @@ Glob(".claude/agents/*/AGENT.md")  → 기존 Agent 목록
 - Agent 생성 시: 목적에 가장 유사한 기존 Agent 참조
   - 분석/검증 전용 → `code-analyzer/AGENT.md` 참조 (Read-only 패턴)
   - 파일 생성/수정 → `pdca-iterator/AGENT.md` 참조 (Write 패턴)
-  - 탐색 전문 → `codebase-locator/AGENT.md` 참조 (탐색 패턴)
-  - 웹 연동 → `web-search-researcher/AGENT.md` 참조 (외부 연동 패턴)
+  - 아키텍처/인프라 → `system-architect/AGENT.md` 참조 (설계 패턴)
+  - 보안 전문 → `security-architect/AGENT.md` 참조 (보안 패턴)
 
 ### Step 5: frontmatter + 본문 생성
 

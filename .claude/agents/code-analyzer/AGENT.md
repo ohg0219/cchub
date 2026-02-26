@@ -9,7 +9,7 @@ description: |
   análisis de código, analyse de code, Codeanalyse, analisi del codice
 
   Do NOT use for: design review, gap analysis, writing/modifying code.
-model: opus
+model: sonnet
 tools:
   - Read
   - Glob

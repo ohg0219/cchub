@@ -10,6 +10,17 @@
 | [cckit-seed](cckit-seed/) | 95% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-seed/` |
 | [cchub-rename](cchub-rename/) | 98% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-rename/` |
 | [cchub-features](cchub-features/) | 92% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-features/` |
+| [cchub-overhaul](cchub-overhaul/) | 90% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-overhaul/` |
+
+## cchub-overhaul 요약
+
+- **범위**: 로그인 완전 제거(Supabase Auth/OAuth), 공개 마켓플레이스 전환, GitHub 인덱싱 시드 스크립트, 콘텐츠 뱃지 UI
+- **결과**: FR 10/10, 추가 구현(Commands 탐색/콘텐츠 뱃지), Warning 3건 수정, Match Rate 90%, Act 스킵
+- **문서**:
+  - [Plan](cchub-overhaul/cchub-overhaul.plan.md)
+  - [Design](cchub-overhaul/cchub-overhaul.design.md)
+  - [Analysis](cchub-overhaul/cchub-overhaul.analysis.md)
+  - [Report](cchub-overhaul/cchub-overhaul.report.md)
 
 ## cchub-features 요약
 

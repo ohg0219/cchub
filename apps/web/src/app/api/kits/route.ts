@@ -78,10 +78,6 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const supabase = await createClient();
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
 
     const body = await request.json() as {
       github_repo: string;
@@ -138,8 +134,8 @@ export async function POST(request: NextRequest) {
         file_tree: body.file_tree ?? null,
         hooks_meta: body.hooks_meta ?? [],
         slug,
-        author_id: user.id,
-        is_published: true,
+        author_id: null,
+        is_published: false,
         install_count: 0,
       })
       .select('id, slug')

@@ -16,7 +16,7 @@ interface GitHubAnalysisResult {
 
 const CATEGORIES = ['backend', 'frontend', 'data', 'devops', 'mobile', 'fullstack'] as const;
 
-export function SubmitForm({ userId }: { userId: string }) {
+export function SubmitForm() {
   const t = useTranslations('submit');
   const router = useRouter();
 
@@ -100,9 +100,6 @@ export function SubmitForm({ userId }: { userId: string }) {
       setIsSubmitting(false);
     }
   }
-
-  // userId is available for future use (e.g., display name)
-  void userId;
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
@@ -198,6 +195,10 @@ export function SubmitForm({ userId }: { userId: string }) {
       >
         {isSubmitting ? t('form.submitting') : t('form.submit')}
       </button>
+
+      <p className="text-center text-xs text-gray-500">
+        {t('form.reviewNotice')}
+      </p>
     </form>
   );
 }

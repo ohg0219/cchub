@@ -8,6 +8,7 @@ const KIND_ICONS: Record<string, { icon: string; color: string }> = {
   hook:      { icon: '⚡', color: 'text-yellow-400' },
   agent:     { icon: '🤖', color: 'text-green-400' },
   claude_md: { icon: '📋', color: 'text-purple-400' },
+  command:   { icon: '⚙️', color: 'text-gray-300' },
   other:     { icon: '📄', color: 'text-gray-400' },
 };
 

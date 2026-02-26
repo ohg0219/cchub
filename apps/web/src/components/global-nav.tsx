@@ -1,15 +1,7 @@
-import { createClient } from '@/lib/supabase/server';
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
-import { LoginButton } from './login-button';
-import { UserMenu } from './user-menu';
 
 export default async function GlobalNav() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
   const t = await getTranslations('nav');
 
   return (
@@ -34,11 +26,14 @@ export default async function GlobalNav() {
         </div>
 
         <div className="flex items-center gap-3">
-          {user ? (
-            <UserMenu user={user} logoutLabel={t('logout')} />
-          ) : (
-            <LoginButton label={t('login')} />
-          )}
+          <a
+            href="https://github.com/anthropics/claude-code"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-400 hover:text-white transition-colors"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </nav>

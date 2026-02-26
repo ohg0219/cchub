@@ -52,6 +52,8 @@ export default async function KitDetailPage({
 
   if (!kit) notFound();
 
+  const commandsCount = kit.file_tree?.filter((n) => n.kind === 'command').length ?? 0;
+
   return (
     <main className="min-h-screen bg-gray-950 px-4 py-10">
       <div className="mx-auto max-w-4xl">
@@ -99,6 +101,35 @@ export default async function KitDetailPage({
         <div className="mb-8">
           <h2 className="mb-2 text-sm font-semibold text-gray-400">{t('install')}</h2>
           <CliBlock command={`npx cchub install ${kit.slug}`} />
+        </div>
+
+        {/* 콘텐츠 뱃지 */}
+        <div className="mb-8 flex flex-wrap gap-3">
+          {kit.has_claude_md && (
+            <span className="flex items-center gap-1.5 rounded-lg border border-purple-800 bg-purple-950/50 px-3 py-1.5 text-sm text-purple-300">
+              <span>📋</span> CLAUDE.md
+            </span>
+          )}
+          {kit.skills_count > 0 && (
+            <span className="flex items-center gap-1.5 rounded-lg border border-blue-800 bg-blue-950/50 px-3 py-1.5 text-sm text-blue-300">
+              <span>📄</span> Skills {kit.skills_count}
+            </span>
+          )}
+          {kit.hooks_count > 0 && (
+            <span className="flex items-center gap-1.5 rounded-lg border border-yellow-800 bg-yellow-950/50 px-3 py-1.5 text-sm text-yellow-300">
+              <span>⚡</span> Hooks {kit.hooks_count}
+            </span>
+          )}
+          {kit.agents_count > 0 && (
+            <span className="flex items-center gap-1.5 rounded-lg border border-green-800 bg-green-950/50 px-3 py-1.5 text-sm text-green-300">
+              <span>🤖</span> Agents {kit.agents_count}
+            </span>
+          )}
+          {commandsCount > 0 && (
+            <span className="flex items-center gap-1.5 rounded-lg border border-gray-700 bg-gray-800/50 px-3 py-1.5 text-sm text-gray-300">
+              <span>⚙️</span> Commands {commandsCount}
+            </span>
+          )}
         </div>
 
         {/* 파일 트리 + Hook 다이어그램 */}

@@ -1,17 +1,3 @@
-import type { User } from '@supabase/supabase-js';
-
-export interface Profile {
-  id: string;
-  github_username: string;
-  display_name: string | null;
-  avatar_url: string | null;
-  bio: string | null;
-  created_at: string;
-  updated_at: string;
-}
-
-export type AuthUser = User;
-
 export interface KitSummary {
   id: string;
   slug: string;
@@ -36,7 +22,7 @@ export interface FileTreeNode {
   name: string;
   type: 'file' | 'dir';
   path: string;
-  kind?: 'skill' | 'hook' | 'agent' | 'claude_md' | 'other';
+  kind?: 'skill' | 'hook' | 'agent' | 'claude_md' | 'command' | 'other';
   children?: FileTreeNode[];
 }
 
@@ -48,7 +34,8 @@ export interface HookMeta {
 }
 
 export interface KitDetail extends KitSummary {
-  author_id: string;
+  author_id: string | null;
+  is_published: boolean;
   github_repo: string;
   github_branch: string;
   version: string;

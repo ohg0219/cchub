@@ -6,9 +6,7 @@
   },
   "nav": {
     "explore": "Explore",
-    "submit": "Submit Kit",
-    "login": "Login",
-    "logout": "Logout"
+    "submit": "Submit Kit"
   },
   "home": {
     "title": "Claude Code infrastructure in one shot",
@@ -85,7 +83,8 @@
       "tags": "Tags",
       "tagsPlaceholder": "spring, java, backend (comma separated)",
       "submit": "Submit Kit",
-      "submitting": "Submitting..."
+      "submitting": "Submitting...",
+      "reviewNotice": "Your submission will be reviewed before publishing."
     },
     "analyzing": "Analyzing GitHub repo...",
     "analyzed": "Metadata auto-filled",

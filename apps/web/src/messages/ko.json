@@ -6,9 +6,7 @@
   },
   "nav": {
     "explore": "킷 탐색",
-    "submit": "킷 등록",
-    "login": "로그인",
-    "logout": "로그아웃"
+    "submit": "킷 등록"
   },
   "home": {
     "title": "Claude Code 인프라를 한 번에",
@@ -85,7 +83,8 @@
       "tags": "태그",
       "tagsPlaceholder": "spring, java, backend (쉼표 구분)",
       "submit": "킷 등록하기",
-      "submitting": "등록 중..."
+      "submitting": "등록 중...",
+      "reviewNotice": "검토 후 공개됩니다."
     },
     "analyzing": "GitHub repo 분석 중...",
     "analyzed": "메타데이터 자동 채우기 완료",

@@ -17,7 +17,7 @@ export default async function GlobalNav() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <Link href="/" className="text-lg font-bold text-white tracking-tight">
-            CCKit
+            CCHub
           </Link>
           <Link
             href="/explore"

@@ -133,7 +133,7 @@ export default async function HomePage() {
             <h2 className="text-2xl font-bold text-white">{t('cliCta.title')}</h2>
             <p className="mt-2 text-gray-400">{t('cliCta.subtitle')}</p>
             <div className="mt-6 text-left">
-              <CliBlock command="npx cckit install spring-boot-enterprise" />
+              <CliBlock command="npx cchub install spring-boot-enterprise" />
             </div>
           </div>
         </section>

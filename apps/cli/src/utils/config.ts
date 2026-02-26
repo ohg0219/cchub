@@ -1,4 +1,4 @@
 export const config = {
-  apiBaseUrl: process.env.CCKIT_API_URL ?? 'https://cckit.dev',
+  apiBaseUrl: process.env.CCHUB_API_URL ?? 'https://cchub.dev',
   cliVersion: '0.1.0',
 } as const;

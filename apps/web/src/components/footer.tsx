@@ -10,7 +10,7 @@ export default async function Footer() {
         <span className="text-sm text-gray-500">{t('copyright')}</span>
         <div className="flex items-center gap-6">
           <a
-            href="https://github.com/cckit"
+            href="https://github.com/cchub"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-gray-400 hover:text-white transition-colors"

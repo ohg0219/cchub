@@ -20,7 +20,7 @@ importers:
 
   apps/cli:
     dependencies:
-      '@cckit/shared':
+      '@cchub/shared':
         specifier: workspace:*
         version: link:../../packages/shared
       chalk:
@@ -48,7 +48,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@cckit/shared':
+      '@cchub/shared':
         specifier: workspace:*
         version: link:../../packages/shared
       '@supabase/ssr':

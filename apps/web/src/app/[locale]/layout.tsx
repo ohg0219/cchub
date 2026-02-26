@@ -7,7 +7,7 @@ import GlobalNav from '@/components/global-nav';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'CCKit — Claude Code Starter Kit Hub',
+  title: 'CCHub — Claude Code Starter Kit Hub',
   description: 'Skills + Hooks + Agents + CLAUDE.md를 한 번에 설치하는 마켓플레이스',
 };
 

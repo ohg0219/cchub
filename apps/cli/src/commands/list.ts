@@ -9,7 +9,7 @@ export async function listAction(): Promise<void> {
   if (manifest.kits.length === 0) {
     logger.info('No kits installed yet.');
     logger.blank();
-    console.log(chalk.gray('Install a kit: npx cckit install <slug>'));
+    console.log(chalk.gray('Install a kit: npx cchub install <slug>'));
     logger.blank();
     return;
   }

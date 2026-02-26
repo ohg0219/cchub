@@ -1,5 +1,5 @@
 {
-  "name": "cckit",
+  "name": "cchub",
   "private": true,
   "scripts": {
     "build": "turbo build",

@@ -8,7 +8,7 @@ import { config } from './utils/config.js';
 const program = new Command();
 
 program
-  .name('cckit')
+  .name('cchub')
   .description('Claude Code Starter Kit 설치 도구')
   .version(config.cliVersion);
 

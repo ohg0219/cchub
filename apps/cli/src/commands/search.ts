@@ -58,6 +58,6 @@ export async function searchAction(query: string): Promise<void> {
   }
 
   logger.blank();
-  console.log(chalk.gray(`Install: npx cckit install <slug>`));
+  console.log(chalk.gray(`Install: npx cchub install <slug>`));
   logger.blank();
 }

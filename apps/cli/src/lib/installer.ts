@@ -42,7 +42,7 @@ function resolveDestPath(
   if (options.skipHooks && node.kind === 'hook') return null;
   if (options.skipAgents && node.kind === 'agent') return null;
 
-  // node.path 에서 종류별 하위 경로 추출 (e.g. "seeds/cckit-starter/skills/pdca/SKILL.md" → "pdca/SKILL.md")
+  // node.path 에서 종류별 하위 경로 추출 (e.g. "seeds/cchub-starter/skills/pdca/SKILL.md" → "pdca/SKILL.md")
   const getSubPath = (prefix: string) => {
     const idx = node.path.indexOf(prefix);
     return idx !== -1 ? node.path.slice(idx + prefix.length) : node.name;
@@ -236,7 +236,7 @@ export async function installKit(
 
   // 설치 기록 저장
   if (!options.dryRun && installedFiles.length > 0) {
-    const manifestPath = path.join(base, '.claude', '.cckit-installed.json');
+    const manifestPath = path.join(base, '.claude', '.cchub-installed.json');
     await updateInstalledManifest(manifestPath, kit, installedFiles);
   }
 
@@ -247,7 +247,7 @@ export async function installKit(
 
 export async function readInstalledManifest(targetDir?: string): Promise<InstalledManifest> {
   const base = targetDir ?? process.cwd();
-  const manifestPath = path.join(base, '.claude', '.cckit-installed.json');
+  const manifestPath = path.join(base, '.claude', '.cchub-installed.json');
   try {
     const raw = await fs.readFile(manifestPath, 'utf-8');
     return JSON.parse(raw) as InstalledManifest;

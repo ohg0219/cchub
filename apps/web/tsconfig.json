@@ -16,8 +16,8 @@
     "plugins": [{ "name": "next" }],
     "paths": {
       "@/*": ["./src/*"],
-      "@cckit/shared": ["../../packages/shared/src"],
-      "@cckit/shared/*": ["../../packages/shared/src/*"]
+      "@cchub/shared": ["../../packages/shared/src"],
+      "@cchub/shared/*": ["../../packages/shared/src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

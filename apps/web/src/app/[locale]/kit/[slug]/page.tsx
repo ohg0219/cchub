@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const kit = await fetchKit(slug);
   if (!kit) return {};
   return {
-    title: `${kit.name} — CCKit`,
+    title: `${kit.name} — CCHub`,
     description: kit.description,
   };
 }
@@ -98,7 +98,7 @@ export default async function KitDetailPage({
         {/* CLI 설치 블록 */}
         <div className="mb-8">
           <h2 className="mb-2 text-sm font-semibold text-gray-400">{t('install')}</h2>
-          <CliBlock command={`npx cckit install ${kit.slug}`} />
+          <CliBlock command={`npx cchub install ${kit.slug}`} />
         </div>
 
         {/* 파일 트리 + Hook 다이어그램 */}

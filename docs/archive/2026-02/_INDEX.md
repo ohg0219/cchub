@@ -6,6 +6,17 @@
 | [cckit-auth](cckit-auth/) | 95% | 1 | 2026-02-26 | `docs/archive/2026-02/cckit-auth/` |
 | [cckit-landing](cckit-landing/) | 97% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-landing/` |
 | [cckit-explore](cckit-explore/) | 97% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-explore/` |
+| [cckit-cli](cckit-cli/) | 96% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-cli/` |
+
+## cckit-cli 요약
+
+- **범위**: npx cckit install/search/list CLI 도구 — GitHub Raw 파일 다운로드, settings.json 딥 머지, 설치 추적
+- **결과**: FR 10/10, Critical 0건, Warning 3건 수정, Match Rate 96%, Act 스킵
+- **문서**:
+  - [Plan](cckit-cli/cckit-cli.plan.md)
+  - [Design](cckit-cli/cckit-cli.design.md)
+  - [Analysis](cckit-cli/cckit-cli.analysis.md)
+  - [Report](cckit-cli/cckit-cli.report.md)
 
 ## cckit-setup 요약
 

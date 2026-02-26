@@ -3,6 +3,7 @@
 | Feature | Match Rate | Iterations | 완료일 | 아카이브 경로 |
 |---------|-----------|-----------|--------|--------------|
 | [cckit-setup](cckit-setup/) | 92% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-setup/` |
+| [cckit-auth](cckit-auth/) | 95% | 1 | 2026-02-26 | `docs/archive/2026-02/cckit-auth/` |
 
 ## cckit-setup 요약
 
@@ -13,3 +14,13 @@
   - [Design](cckit-setup/cckit-setup.design.md)
   - [Analysis](cckit-setup/cckit-setup.analysis.md)
   - [Report](cckit-setup/cckit-setup.report.md)
+
+## cckit-auth 요약
+
+- **범위**: GitHub OAuth + Supabase Auth SSR + GlobalNav/LoginButton/UserMenu 컴포넌트
+- **결과**: Match Rate 95%, 1회 이터레이션 후 최종 달성
+- **문서**:
+  - [Plan](cckit-auth/cckit-auth.plan.md)
+  - [Design](cckit-auth/cckit-auth.design.md)
+  - [Analysis](cckit-auth/cckit-auth.analysis.md)
+  - [Report](cckit-auth/cckit-auth.report.md)

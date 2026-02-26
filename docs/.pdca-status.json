@@ -25,6 +25,14 @@
       "createdAt": "2026-02-25T00:00:00Z",
       "updatedAt": "2026-02-26T00:00:00Z"
     },
+    "cckit-auth": {
+      "phase": "archived",
+      "matchRate": 95,
+      "iterationCount": 1,
+      "startedAt": "2026-02-26T00:00:00Z",
+      "archivedAt": "2026-02-26T09:00:00Z",
+      "archivedTo": "docs/archive/2026-02/cckit-auth/"
+    },
     "cckit-setup": {
       "phase": "archived",
       "matchRate": 92,
@@ -92,10 +100,55 @@
       "timestamp": "2026-02-26T03:00:00Z"
     },
     {
+      "action": "plan_created",
+      "feature": "cckit-auth",
+      "timestamp": "2026-02-26T05:00:00Z"
+    },
+    {
+      "action": "design_created",
+      "feature": "cckit-auth",
+      "timestamp": "2026-02-26T05:30:00Z"
+    },
+    {
+      "action": "do_started",
+      "feature": "cckit-auth",
+      "timestamp": "2026-02-26T06:00:00Z"
+    },
+    {
+      "action": "check_completed",
+      "feature": "cckit-auth",
+      "timestamp": "2026-02-26T07:00:00Z",
+      "matchRate": 82
+    },
+    {
+      "action": "iteration_completed",
+      "feature": "cckit-auth",
+      "timestamp": "2026-02-26T07:30:00Z",
+      "iteration": 1,
+      "matchRate": 95
+    },
+    {
+      "action": "report_generated",
+      "feature": "cckit-auth",
+      "timestamp": "2026-02-26T08:00:00Z"
+    },
+    {
+      "action": "do_implementation",
+      "feature": "cckit-auth",
+      "timestamp": "2026-02-26T06:30:00Z",
+      "note": "auth routes(login/logout), GlobalNav, LoginButton, UserMenu, types.ts 구현, layout.tsx GlobalNav 통합"
+    },
+    {
       "action": "archived",
       "feature": "cckit-setup",
       "timestamp": "2026-02-26T04:00:00Z",
       "archivedTo": "docs/archive/2026-02/cckit-setup/"
+    },
+    {
+      "action": "archived",
+      "feature": "cckit-auth",
+      "timestamp": "2026-02-26T09:00:00Z",
+      "archivedTo": "docs/archive/2026-02/cckit-auth/"
     }
   ]
 }

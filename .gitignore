@@ -38,3 +38,6 @@ pnpm-debug.log*
 *.ipr
 
 bash.exe.stackdump
+
+# PDCA snapshots (local session state, not for version control)
+docs/.pdca-snapshots/

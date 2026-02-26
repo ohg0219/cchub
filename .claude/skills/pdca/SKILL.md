@@ -320,6 +320,47 @@ Example (completed, Act was executed — matchRate was < 90%):
 
 3. Ask user with AskUserQuestion to confirm proceeding
 
+## Snapshot Management
+
+스냅샷은 세션 간 PDCA 상태를 복원하기 위한 로컬 백업입니다.
+`docs/.pdca-snapshots/` 디렉토리에 저장되며, `.gitignore`에 등록되어 있습니다.
+
+### 저장 규칙
+
+**모든 액션(plan/design/do/analyze/iterate/report/archive/commit) 완료 후** 스냅샷을 저장한다.
+
+저장 절차:
+1. 현재 날짜를 `YYYYMMDD` 형식으로 구한다 (예: `20260226`)
+2. `docs/.pdca-snapshots/` 디렉토리에 해당 날짜 파일이 있으면 삭제한다
+   - 삭제 대상: `snap-20260226-*.json` 패턴의 모든 파일
+3. 새 파일명: `snap-{YYYYMMDD}-{HHMMSS}.json`
+4. 저장 내용:
+   ```json
+   {
+     "timestamp": "<ISO 8601>",
+     "trigger": "auto",
+     "sessionId": "<random UUID>",
+     "status": { /* docs/.pdca-status.json 전체 내용 */ },
+     "activeContext": {
+       "feature": "<primaryFeature>",
+       "phase": "<current phase>",
+       "lastAction": "<action name>"
+     }
+   }
+   ```
+
+### 복원 규칙
+
+세션 시작 시 (`/pdca status` 또는 `/pdca next` 실행 시):
+1. `docs/.pdca-status.json`이 존재하면 그것을 사용 (스냅샷 불필요)
+2. `docs/.pdca-status.json`이 없으면 `docs/.pdca-snapshots/`에서 가장 최신 파일을 읽어 복원
+
+### 보존 정책
+
+- **일별 최신 1개만 유지**: 저장 시 같은 날짜의 기존 스냅샷을 모두 삭제
+- 오래된 날짜 파일은 자동으로 누적되지 않음 (하루 1개 상한)
+- `docs/.pdca-status.json`이 소스 오브 트루스이므로 스냅샷 손실은 문제없음
+
 ## Task System Integration
 
 Each PDCA phase creates a Task with dependency chain:

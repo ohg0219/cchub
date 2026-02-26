@@ -11,6 +11,17 @@
 | [cchub-rename](cchub-rename/) | 98% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-rename/` |
 | [cchub-features](cchub-features/) | 92% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-features/` |
 | [cchub-overhaul](cchub-overhaul/) | 90% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-overhaul/` |
+| [bash-stackdump-fix](bash-stackdump-fix/) | 100% | 0 | 2026-02-26 | `docs/archive/2026-02/bash-stackdump-fix/` |
+
+## bash-stackdump-fix 요약
+
+- **범위**: bash.exe.stackdump 생성 원인 분석 및 재발 방지 — .gitignore 패턴 추가, 기존 파일 삭제, CLAUDE.md 주의사항 추가, Git for Windows 2.53.0 업데이트
+- **결과**: FR 10/10, Critical 0건, Match Rate 100%, Act 스킵, 이터레이션 0회
+- **문서**:
+  - [Plan](bash-stackdump-fix/bash-stackdump-fix.plan.md)
+  - [Design](bash-stackdump-fix/bash-stackdump-fix.design.md)
+  - [Analysis](bash-stackdump-fix/bash-stackdump-fix.analysis.md)
+  - [Report](bash-stackdump-fix/bash-stackdump-fix.report.md)
 
 ## cchub-overhaul 요약
 

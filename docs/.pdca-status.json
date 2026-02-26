@@ -1,8 +1,8 @@
 {
   "version": "2.0",
   "projectName": "CCHub",
-  "primaryFeature": "bash-stackdump-fix",
-  "activeFeatures": ["cchub-deploy", "bash-stackdump-fix"],
+  "primaryFeature": "cchub-deploy",
+  "activeFeatures": ["cchub-deploy"],
   "features": {
     "cckit-mvp": {
       "phase": "plan",
@@ -91,19 +91,12 @@
       "updatedAt": "2026-02-26T20:30:00Z"
     },
     "bash-stackdump-fix": {
-      "phase": "do",
-      "phaseNumber": 3,
-      "matchRate": 0,
+      "phase": "archived",
+      "matchRate": 100,
       "iterationCount": 0,
-      "documents": {
-        "plan": "docs/01-plan/features/bash-stackdump-fix.plan.md",
-        "design": "docs/02-design/features/bash-stackdump-fix.design.md",
-        "analysis": null,
-        "report": null
-      },
-      "tdd": { "enabled": false, "testScenarioCount": 0, "testsPassing": 0, "testsFailing": 0, "coverage": 0 },
-      "createdAt": "2026-02-26T08:30:00Z",
-      "updatedAt": "2026-02-26T08:35:00Z"
+      "startedAt": "2026-02-26T08:30:00Z",
+      "archivedAt": "2026-02-26T09:05:00Z",
+      "archivedTo": "docs/archive/2026-02/bash-stackdump-fix/"
     },
     "cchub-overhaul": {
       "phase": "archived",
@@ -441,6 +434,10 @@
     { "action": "plan_created", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T08:30:00Z" },
     { "action": "design_created", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T08:35:00Z" },
     { "action": "do_started", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T08:40:00Z" },
-    { "action": "do_implementation", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T08:45:00Z", "note": ".gitignore 패턴 추가, 기존 stackdump 2개 삭제, CLAUDE.md Windows 주의사항 추가, Git 2.53.0으로 업데이트 완료" }
+    { "action": "do_implementation", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T08:45:00Z", "note": ".gitignore 패턴 추가, 기존 stackdump 2개 삭제, CLAUDE.md Windows 주의사항 추가, Git 2.53.0으로 업데이트 완료" },
+    { "action": "committed", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T08:50:00Z", "phase": "do", "commitCount": 1, "commitMessages": ["fix: bash.exe.stackdump 생성 문제 해결 및 재발 방지"] },
+    { "action": "check_completed", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T08:55:00Z", "matchRate": 100 },
+    { "action": "report_generated", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T09:00:00Z" },
+    { "action": "archived", "feature": "bash-stackdump-fix", "timestamp": "2026-02-26T09:05:00Z", "archivedTo": "docs/archive/2026-02/bash-stackdump-fix/" }
   ]
 }

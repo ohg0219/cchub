@@ -4,6 +4,7 @@
 |---------|-----------|-----------|--------|--------------|
 | [cckit-setup](cckit-setup/) | 92% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-setup/` |
 | [cckit-auth](cckit-auth/) | 95% | 1 | 2026-02-26 | `docs/archive/2026-02/cckit-auth/` |
+| [cckit-landing](cckit-landing/) | 97% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-landing/` |
 
 ## cckit-setup 요약
 

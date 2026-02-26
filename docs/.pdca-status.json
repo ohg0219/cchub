@@ -1,8 +1,8 @@
 {
   "version": "2.0",
   "projectName": "CCKit",
-  "primaryFeature": "cckit-landing",
-  "activeFeatures": ["cckit-landing", "cckit-explore", "cckit-cli", "cckit-seed", "cckit-deploy"],
+  "primaryFeature": "cckit-explore",
+  "activeFeatures": ["cckit-explore", "cckit-cli", "cckit-seed", "cckit-deploy"],
   "features": {
     "cckit-mvp": {
       "phase": "plan",
@@ -20,19 +20,12 @@
       "updatedAt": "2026-02-26T00:00:00Z"
     },
     "cckit-landing": {
-      "phase": "do",
-      "phaseNumber": 3,
-      "matchRate": 0,
+      "phase": "archived",
+      "matchRate": 97,
       "iterationCount": 0,
-      "documents": {
-        "plan": "docs/01-plan/features/cckit-landing.plan.md",
-        "design": "docs/02-design/features/cckit-landing.design.md",
-        "analysis": null,
-        "report": null
-      },
-      "tdd": { "enabled": false, "testScenarioCount": 0, "testsPassing": 0, "testsFailing": 0, "coverage": 0 },
-      "createdAt": "2026-02-26T09:00:00Z",
-      "updatedAt": "2026-02-26T09:00:00Z"
+      "startedAt": "2026-02-26T09:00:00Z",
+      "archivedAt": "2026-02-26T11:30:00Z",
+      "archivedTo": "docs/archive/2026-02/cckit-landing/"
     },
     "cckit-explore": {
       "phase": "plan",
@@ -235,10 +228,27 @@
       "timestamp": "2026-02-26T10:00:00Z"
     },
     {
+      "action": "check_completed",
+      "feature": "cckit-landing",
+      "timestamp": "2026-02-26T10:45:00Z",
+      "matchRate": 97
+    },
+    {
+      "action": "report_generated",
+      "feature": "cckit-landing",
+      "timestamp": "2026-02-26T11:00:00Z"
+    },
+    {
       "action": "do_implementation",
       "feature": "cckit-landing",
       "timestamp": "2026-02-26T10:30:00Z",
       "note": "ko.json/en.json i18n 추가, KitCard/CliBlock/Footer 컴포넌트, page.tsx 랜딩 구현, GlobalNav/UserMenu Link 교체, routing.ts createNavigation 추가"
+    },
+    {
+      "action": "archived",
+      "feature": "cckit-landing",
+      "timestamp": "2026-02-26T11:30:00Z",
+      "archivedTo": "docs/archive/2026-02/cckit-landing/"
     },
     {
       "action": "plan_created",

@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server';
 import { getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/routing';
 import { LoginButton } from './login-button';
 import { UserMenu } from './user-menu';
 
@@ -15,21 +16,21 @@ export default async function GlobalNav() {
     <nav className="sticky top-0 z-40 w-full border-b border-gray-800 bg-gray-950/90 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         <div className="flex items-center gap-6">
-          <a href="/" className="text-lg font-bold text-white tracking-tight">
+          <Link href="/" className="text-lg font-bold text-white tracking-tight">
             CCKit
-          </a>
-          <a
+          </Link>
+          <Link
             href="/explore"
             className="text-sm text-gray-400 hover:text-white transition-colors"
           >
             {t('explore')}
-          </a>
-          <a
+          </Link>
+          <Link
             href="/submit"
             className="text-sm text-gray-400 hover:text-white transition-colors"
           >
             {t('submit')}
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-3">

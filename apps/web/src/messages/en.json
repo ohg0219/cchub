@@ -15,7 +15,31 @@
     "subtitle": "A starter kit marketplace to install Skills + Hooks + Agents + CLAUDE.md in one click",
     "cta": {
       "explore": "Explore Kits",
-      "submit": "Submit Your Kit"
+      "github": "Start with GitHub"
+    },
+    "stats": {
+      "kits": "starter kits",
+      "installs": "installs",
+      "categories": "categories"
+    },
+    "popularKits": {
+      "title": "Popular Kits",
+      "viewAll": "View all",
+      "empty": "No kits yet. Be the first to submit one!",
+      "registerFirst": "Submit a Kit"
+    },
+    "cliCta": {
+      "title": "Install in one terminal command",
+      "subtitle": "Works instantly with any project that has Claude Code installed"
     }
+  },
+  "kitCard": {
+    "installs": "{count} installs"
+  },
+  "footer": {
+    "copyright": "© 2026 CCKit",
+    "github": "GitHub",
+    "docs": "Docs",
+    "submit": "Submit Kit"
   }
 }

@@ -30,3 +30,11 @@ pnpm-debug.log*
 
 # TypeScript
 *.tsbuildinfo
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+bash.exe.stackdump

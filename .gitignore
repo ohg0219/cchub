@@ -37,7 +37,9 @@ pnpm-debug.log*
 *.iml
 *.ipr
 
+# Cygwin/MSYS2 bash crash dump (Windows 개발 환경)
 bash.exe.stackdump
+**/bash.exe.stackdump
 
 # PDCA snapshots (local session state, not for version control)
 docs/.pdca-snapshots/

@@ -148,3 +148,11 @@ pnpm dev                  # 웹 + CLI 개발 서버
 pnpm --filter web dev     # 웹만 개발 서버
 pnpm --filter cli build   # CLI 빌드
 ```
+
+## Windows 개발 환경 주의사항
+
+- `bash.exe.stackdump` 파일이 생성되면 무시해도 됨 (`.gitignore` 등록됨)
+  - 원인: MSYS2 bash (Git for Windows) 크래시 덤프
+  - 재발 방지: **Git for Windows 최신 버전 유지** 권장
+- Bash tool 사용 시 복합 명령(`cmd1; cmd2`)보다 개별 명령 분리 실행 권장
+  (Windows + MSYS2 조합에서 연속 subprocess 생성 시 간헐적 불안정)

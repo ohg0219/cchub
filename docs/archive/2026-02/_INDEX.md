@@ -7,6 +7,7 @@
 | [cckit-landing](cckit-landing/) | 97% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-landing/` |
 | [cckit-explore](cckit-explore/) | 97% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-explore/` |
 | [cckit-cli](cckit-cli/) | 96% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-cli/` |
+| [cckit-seed](cckit-seed/) | 95% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-seed/` |
 
 ## cckit-cli 요약
 
@@ -17,6 +18,16 @@
   - [Design](cckit-cli/cckit-cli.design.md)
   - [Analysis](cckit-cli/cckit-cli.analysis.md)
   - [Report](cckit-cli/cckit-cli.report.md)
+
+## cckit-seed 요약
+
+- **범위**: 시드 킷 3종(cckit-starter/spring-boot-enterprise/nextjs-fullstack) + supabase/seed.sql
+- **결과**: 필수 파일 29/29 구현, Critical 0건, Match Rate 95%, Act 스킵
+- **문서**:
+  - [Plan](cckit-seed/cckit-seed.plan.md)
+  - [Design](cckit-seed/cckit-seed.design.md)
+  - [Analysis](cckit-seed/cckit-seed.analysis.md)
+  - [Report](cckit-seed/cckit-seed.report.md)
 
 ## cckit-setup 요약
 

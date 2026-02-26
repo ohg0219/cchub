@@ -8,6 +8,17 @@
 | [cckit-explore](cckit-explore/) | 97% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-explore/` |
 | [cckit-cli](cckit-cli/) | 96% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-cli/` |
 | [cckit-seed](cckit-seed/) | 95% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-seed/` |
+| [cchub-rename](cchub-rename/) | 98% | 0 | 2026-02-26 | `docs/archive/2026-02/cchub-rename/` |
+
+## cchub-rename 요약
+
+- **범위**: 모노레포 전체 패키지 스코프 `@cckit/*` → `@cchub/*`, bin `cckit` → `cchub`, 브랜드 텍스트 CCKit → CCHub
+- **결과**: FR 10/10, 수정 파일 18개, grep 잔존 0건, Match Rate 98%, Act 스킵
+- **문서**:
+  - [Plan](cchub-rename/cchub-rename.plan.md)
+  - [Design](cchub-rename/cchub-rename.design.md)
+  - [Analysis](cchub-rename/cchub-rename.analysis.md)
+  - [Report](cchub-rename/cchub-rename.report.md)
 
 ## cckit-cli 요약
 

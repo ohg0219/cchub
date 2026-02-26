@@ -1,8 +1,8 @@
 {
   "version": "2.0",
-  "projectName": "CCKit",
-  "primaryFeature": "cckit-deploy",
-  "activeFeatures": ["cckit-deploy"],
+  "projectName": "CCHub",
+  "primaryFeature": "cchub-features",
+  "activeFeatures": ["cchub-features", "cchub-deploy"],
   "features": {
     "cckit-mvp": {
       "phase": "plan",
@@ -52,19 +52,50 @@
       "archivedTo": "docs/archive/2026-02/cckit-seed/"
     },
     "cckit-deploy": {
+      "phase": "archived",
+      "note": "3개 feature로 분리됨: cchub-rename, cchub-features, cchub-deploy",
+      "matchRate": 0,
+      "iterationCount": 0,
+      "archivedAt": "2026-02-26T20:30:00Z",
+      "archivedTo": "docs/01-plan/features/cckit-deploy.plan.md (deprecated)"
+    },
+    "cchub-rename": {
+      "phase": "archived",
+      "matchRate": 98,
+      "iterationCount": 0,
+      "startedAt": "2026-02-26T20:30:00Z",
+      "archivedAt": "2026-02-26T23:00:00Z",
+      "archivedTo": "docs/archive/2026-02/cchub-rename/"
+    },
+    "cchub-features": {
       "phase": "plan",
       "phaseNumber": 1,
       "matchRate": 0,
       "iterationCount": 0,
       "documents": {
-        "plan": "docs/01-plan/features/cckit-deploy.plan.md",
+        "plan": "docs/01-plan/features/cchub-features.plan.md",
         "design": null,
         "analysis": null,
         "report": null
       },
       "tdd": { "enabled": false, "testScenarioCount": 0, "testsPassing": 0, "testsFailing": 0, "coverage": 0 },
-      "createdAt": "2026-02-26T09:00:00Z",
-      "updatedAt": "2026-02-26T09:00:00Z"
+      "createdAt": "2026-02-26T20:30:00Z",
+      "updatedAt": "2026-02-26T20:30:00Z"
+    },
+    "cchub-deploy": {
+      "phase": "plan",
+      "phaseNumber": 1,
+      "matchRate": 0,
+      "iterationCount": 0,
+      "documents": {
+        "plan": "docs/01-plan/features/cchub-deploy.plan.md",
+        "design": null,
+        "analysis": null,
+        "report": null
+      },
+      "tdd": { "enabled": false, "testScenarioCount": 0, "testsPassing": 0, "testsFailing": 0, "coverage": 0 },
+      "createdAt": "2026-02-26T20:30:00Z",
+      "updatedAt": "2026-02-26T20:30:00Z"
     },
     "cckit-auth": {
       "phase": "archived",
@@ -332,6 +363,14 @@
       "note": "seeds/ 3개 킷(cckit-starter/spring-boot-enterprise/nextjs-fullstack) 파일 작성, supabase/seed.sql 작성"
     },
     {
+      "action": "committed",
+      "feature": "cckit-seed",
+      "timestamp": "2026-02-26T19:10:00Z",
+      "phase": "archived",
+      "commitCount": 1,
+      "commitMessages": ["docs: cckit-seed PDCA 사이클 아카이브"]
+    },
+    {
       "action": "archived",
       "feature": "cckit-seed",
       "timestamp": "2026-02-26T19:00:00Z",
@@ -358,6 +397,16 @@
         "feat: cckit-seed 시드 킷 3종 구현 및 CLI/미들웨어 수정",
         "chore: .claude/agents 업데이트 — 신규 에이전트 추가 및 미사용 제거"
       ]
-    }
+    },
+    {
+      "action": "design_created",
+      "feature": "cchub-rename",
+      "timestamp": "2026-02-26T21:00:00Z"
+    },
+    { "action": "do_started", "feature": "cchub-rename", "timestamp": "2026-02-26T21:10:00Z" },
+    { "action": "do_implementation", "feature": "cchub-rename", "timestamp": "2026-02-26T21:30:00Z", "note": "package.json 4개 + tsconfig.json + next.config.ts + config.ts + CLI 소스 4개 수정, pnpm install + 빌드 검증 완료" },
+    { "action": "check_completed", "feature": "cchub-rename", "timestamp": "2026-02-26T22:00:00Z", "matchRate": 98 },
+    { "action": "report_generated", "feature": "cchub-rename", "timestamp": "2026-02-26T22:30:00Z" },
+    { "action": "archived", "feature": "cchub-rename", "timestamp": "2026-02-26T23:00:00Z", "archivedTo": "docs/archive/2026-02/cchub-rename/" }
   ]
 }

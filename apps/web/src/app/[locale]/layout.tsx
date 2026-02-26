@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import GlobalNav from '@/components/global-nav';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale}>
       <body className="min-h-screen bg-gray-950 text-gray-100 antialiased">
         <NextIntlClientProvider messages={messages}>
+          <GlobalNav />
           {children}
         </NextIntlClientProvider>
       </body>

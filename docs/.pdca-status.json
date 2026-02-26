@@ -1,8 +1,8 @@
 {
   "version": "2.0",
   "projectName": "CCKit",
-  "primaryFeature": "cckit-explore",
-  "activeFeatures": ["cckit-explore", "cckit-cli", "cckit-seed", "cckit-deploy"],
+  "primaryFeature": "cckit-cli",
+  "activeFeatures": ["cckit-cli", "cckit-seed", "cckit-deploy"],
   "features": {
     "cckit-mvp": {
       "phase": "plan",
@@ -28,19 +28,12 @@
       "archivedTo": "docs/archive/2026-02/cckit-landing/"
     },
     "cckit-explore": {
-      "phase": "plan",
-      "phaseNumber": 1,
-      "matchRate": 0,
+      "phase": "archived",
+      "matchRate": 97,
       "iterationCount": 0,
-      "documents": {
-        "plan": "docs/01-plan/features/cckit-explore.plan.md",
-        "design": null,
-        "analysis": null,
-        "report": null
-      },
-      "tdd": { "enabled": false, "testScenarioCount": 0, "testsPassing": 0, "testsFailing": 0, "coverage": 0 },
-      "createdAt": "2026-02-26T09:00:00Z",
-      "updatedAt": "2026-02-26T09:00:00Z"
+      "startedAt": "2026-02-26T12:00:00Z",
+      "archivedAt": "2026-02-26T13:30:00Z",
+      "archivedTo": "docs/archive/2026-02/cckit-explore/"
     },
     "cckit-cli": {
       "phase": "plan",
@@ -243,6 +236,39 @@
       "feature": "cckit-landing",
       "timestamp": "2026-02-26T10:30:00Z",
       "note": "ko.json/en.json i18n 추가, KitCard/CliBlock/Footer 컴포넌트, page.tsx 랜딩 구현, GlobalNav/UserMenu Link 교체, routing.ts createNavigation 추가"
+    },
+    {
+      "action": "design_created",
+      "feature": "cckit-explore",
+      "timestamp": "2026-02-26T12:00:00Z"
+    },
+    {
+      "action": "do_started",
+      "feature": "cckit-explore",
+      "timestamp": "2026-02-26T12:10:00Z"
+    },
+    {
+      "action": "do_implementation",
+      "feature": "cckit-explore",
+      "timestamp": "2026-02-26T12:20:00Z",
+      "note": "API 3개(kits/[slug]/install), SearchBar/CategoryFilter/FileTree/HookDiagram 컴포넌트, explore/kit/[slug] 페이지, i18n 키 추가"
+    },
+    {
+      "action": "check_completed",
+      "feature": "cckit-explore",
+      "timestamp": "2026-02-26T12:30:00Z",
+      "matchRate": 97
+    },
+    {
+      "action": "report_generated",
+      "feature": "cckit-explore",
+      "timestamp": "2026-02-26T13:00:00Z"
+    },
+    {
+      "action": "archived",
+      "feature": "cckit-explore",
+      "timestamp": "2026-02-26T13:30:00Z",
+      "archivedTo": "docs/archive/2026-02/cckit-explore/"
     },
     {
       "action": "archived",

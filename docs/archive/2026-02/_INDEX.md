@@ -5,6 +5,7 @@
 | [cckit-setup](cckit-setup/) | 92% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-setup/` |
 | [cckit-auth](cckit-auth/) | 95% | 1 | 2026-02-26 | `docs/archive/2026-02/cckit-auth/` |
 | [cckit-landing](cckit-landing/) | 97% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-landing/` |
+| [cckit-explore](cckit-explore/) | 97% | 0 | 2026-02-26 | `docs/archive/2026-02/cckit-explore/` |
 
 ## cckit-setup 요약
 
@@ -15,6 +16,16 @@
   - [Design](cckit-setup/cckit-setup.design.md)
   - [Analysis](cckit-setup/cckit-setup.analysis.md)
   - [Report](cckit-setup/cckit-setup.report.md)
+
+## cckit-explore 요약
+
+- **범위**: 킷 탐색/검색 페이지 + 킷 상세 페이지 + REST API 3개 (목록/상세/설치 수)
+- **결과**: FR 10/10, Critical 0건, Match Rate 97%, Act 스킵
+- **문서**:
+  - [Plan](cckit-explore/cckit-explore.plan.md)
+  - [Design](cckit-explore/cckit-explore.design.md)
+  - [Analysis](cckit-explore/cckit-explore.analysis.md)
+  - [Report](cckit-explore/cckit-explore.report.md)
 
 ## cckit-auth 요약
 

@@ -36,6 +36,35 @@
   "kitCard": {
     "installs": "{count} installs"
   },
+  "explore": {
+    "title": "Explore Kits",
+    "searchPlaceholder": "Search by name, description, tags...",
+    "allCategories": "All",
+    "filters": {
+      "skills": "Skills",
+      "hooks": "Hooks",
+      "agents": "Agents",
+      "claudeMd": "CLAUDE.md"
+    },
+    "sort": {
+      "popular": "Popular",
+      "latest": "Latest"
+    },
+    "empty": "No results found",
+    "emptyHint": "Try a different search or filter",
+    "total": "{count} kits"
+  },
+  "kitDetail": {
+    "back": "Back to Explore",
+    "installs": "↓ {count} installs",
+    "stars": "⭐ {count}",
+    "fileTree": "File Structure",
+    "hookDiagram": "Hook Diagram",
+    "noFile": "No file info",
+    "noHook": "No hooks",
+    "install": "Install",
+    "githubLink": "View on GitHub"
+  },
   "footer": {
     "copyright": "© 2026 CCKit",
     "github": "GitHub",

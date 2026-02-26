@@ -36,6 +36,35 @@
   "kitCard": {
     "installs": "{count}회 설치"
   },
+  "explore": {
+    "title": "킷 탐색",
+    "searchPlaceholder": "킷 이름, 설명, 태그 검색...",
+    "allCategories": "전체",
+    "filters": {
+      "skills": "Skills",
+      "hooks": "Hooks",
+      "agents": "Agents",
+      "claudeMd": "CLAUDE.md"
+    },
+    "sort": {
+      "popular": "인기순",
+      "latest": "최신순"
+    },
+    "empty": "검색 결과가 없습니다",
+    "emptyHint": "다른 검색어나 필터를 시도해보세요",
+    "total": "{count}개의 킷"
+  },
+  "kitDetail": {
+    "back": "탐색으로 돌아가기",
+    "installs": "↓ {count} 설치",
+    "stars": "⭐ {count}",
+    "fileTree": "파일 구조",
+    "hookDiagram": "Hook 다이어그램",
+    "noFile": "파일 정보 없음",
+    "noHook": "Hook 없음",
+    "install": "설치",
+    "githubLink": "GitHub에서 보기"
+  },
   "footer": {
     "copyright": "© 2026 CCKit",
     "github": "GitHub",
